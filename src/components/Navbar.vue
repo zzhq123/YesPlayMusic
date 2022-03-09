@@ -61,7 +61,7 @@
         {{ $t('library.userProfileMenu.logout') }}
       </div>
       <hr />
-      <div class="item" @click="toGitHub">
+      <div class="item">
         <!-- <svg-icon icon-class="github" /> -->
         <!-- {{ $t('nav.github') }} -->
       </div>
@@ -151,9 +151,6 @@ export default {
     },
     toSettings() {
       this.$router.push({ name: 'settings' });
-    },
-    toGitHub() {
-      window.open('https://github.com/qier222/YesPlayMusic');
     },
     toLogin() {
       if (process.env.IS_ELECTRON === true) {
